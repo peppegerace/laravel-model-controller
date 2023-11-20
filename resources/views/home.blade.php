@@ -12,9 +12,10 @@
         <div class="card-body">
             <h4 class="card-title">Titolo: {{ $movie->title }}</h4>
             <h5>Titolo originale: {{ $movie->original_title }}</h5>
-            <p class="card-text">Paese d'origine: {{ $movie->nationality}}</p>
+            <a class="btn btn-info" href="{{ route('details', ['id' => $movie->id])}}">Maggiori dettagli</a>
+            {{-- <p class="card-text">Paese d'origine: {{ $movie->nationality}}</p>
             <p class="card-text">Data d'uscita: {{ $movie->date }}</p>
-            <p class="card-text">Voto: {{ $movie->vote }}</p>
+            <p class="card-text">Voto: {{ $movie->vote }}</p> --}}
         </div>
     </div>
 
